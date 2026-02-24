@@ -374,20 +374,7 @@
         <div id="beat-container"></div>
       </div>
     </div>
-    <div id="scroll-hint">
-      <span>Scroll to Experience</span
-      ><svg
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        stroke-width="2"
-        stroke-linecap="round"
-      >
-        <path d="M12 5v14M19 12l-7 7-7-7" />
-      </svg>
-    </div>
+
     <div id="ui-layer">
       <div class="ui-top">
         <div class="logo">KEEPING TIME</div>
@@ -400,7 +387,7 @@
       </div>
     </div>
     <div id="cta-section" class="cta-section">
-      <a href="#" class="cta-button">Read Chapter 1</a>
+      <a href="#" class="cta-button">Coming Soon</a>
       <p class="cta-subtitle">The journey begins with a single note...</p>
     </div>
 
@@ -599,9 +586,10 @@
           document.getElementById('progress-bar').style.transform =
             `scaleX(${globalProgress})`;
 
-          const hint = document.getElementById('scroll-hint');
+          // Scroll hint removed
+          /* const hint = document.getElementById('scroll-hint');
           if (this.targetY > 50) hint.classList.add('hidden');
-          else hint.classList.remove('hidden');
+          else hint.classList.remove('hidden'); */
 
           // Show CTA at end
           const cta = document.getElementById('cta-section');
